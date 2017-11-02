@@ -11,8 +11,10 @@ public class Evento {
 		
 		System.out.println("Informe o nome do Evento:");
 		this.nomeEvento = ler.next();
+		this.setNomeEvento(nomeEvento);
 		System.out.println("Informe a data em que " +this.nomeEvento+ " irá acontecer:");
 		this.dataEvento = ler.next();
+		this.setDataEvento(dataEvento);
 	}
 	
 	public void infoEvento(){

@@ -4,6 +4,7 @@ public class Palestrantes extends Palestras {
 	protected String curriculoPalestrante;
 	protected String emailPalestrante;
 	protected String telefonePalestrante;
+	protected String nomePalestrante;
 	
 	
 	
@@ -13,6 +14,12 @@ public class Palestrantes extends Palestras {
 	
 	
 	
+	public String getNomePalestrante() {
+		return nomePalestrante;
+	}
+	public void setNomePalestrante(String nomePalestrante) {
+		this.nomePalestrante = nomePalestrante;
+	}
 	public String getCurriculoPalestrante() {
 		return curriculoPalestrante;
 	}

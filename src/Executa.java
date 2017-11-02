@@ -6,14 +6,16 @@ public class Executa {
 		
 		
 		Certificado certificado = new Certificado();
-		Palestras palestras = new Palestras();
+		/*Palestras palestras = new Palestras();
 		Evento evento = new Evento();
 
 		
 		evento.criaEvento();
 		evento.infoEvento();
 		
-		palestras.criaPalestra();
+		palestras.criaPalestra();*/
+		
+		certificado.emitirCertificado();
 		
 	}
 
