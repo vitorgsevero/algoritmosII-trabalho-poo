@@ -6,15 +6,14 @@ public class Executa {
 		
 		
 		Certificado certificado = new Certificado();
+		Palestras palestras = new Palestras();
 		Evento evento = new Evento();
 
-		
-		System.out.println(certificado.emitirCertificado());
 		
 		evento.criaEvento();
 		evento.infoEvento();
 		
-		
+		palestras.criaPalestra();
 		
 	}
 

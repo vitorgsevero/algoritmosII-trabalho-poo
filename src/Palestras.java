@@ -5,19 +5,22 @@ public class Palestras extends Evento {
 	protected String horarioPalestra;
 	protected String resumoPalestra;
 	protected String tituloPalestra;
+	protected String pesquisa;
 	
 	
 	public void criaPalestra(){
 		
 		System.out.println("Informe o evento para vincular a nova palestra:");
-		this.pesquisaEvento = ler.nextLine();
+		this.pesquisa = ler.next();
 		
-		if (this.pesquisaEvento.equals(pesquisaEvento)){
+		if (pesquisa.equals(nomeEvento)){
 			
 			System.out.println("Informe o nome da nova palestra:");
 			this.tituloPalestra = ler.next();
 			
 		}
+		
+		
 		
 	}
 	

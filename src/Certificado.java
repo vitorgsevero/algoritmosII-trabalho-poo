@@ -1,12 +1,9 @@
 
 public class Certificado extends Participantes {
 
-	public String emitirCertificado(){
+	public void emitirCertificado(){
 		
-		String olar="teste";
-		
-		
-		return olar;
+		System.out.println("Informe seu nome");
 		
 	}
 

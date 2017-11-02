@@ -10,7 +10,7 @@ public class Evento {
 	public void criaEvento(){
 		
 		System.out.println("Informe o nome do Evento:");
-		this.nomeEvento = ler.nextLine();
+		this.nomeEvento = ler.next();
 		System.out.println("Informe a data em que " +this.nomeEvento+ " irá acontecer:");
 		this.dataEvento = ler.next();
 	}
@@ -20,7 +20,7 @@ public class Evento {
 		System.out.println("Informe o nome do seu Evento:");
 		this.pesquisaEvento = ler.next();
 		
-		if (this.pesquisaEvento.equals(nomeEvento)){
+		if (this.pesquisaEvento.equals(this.nomeEvento)){
 			
 			System.out.println("Evento encontrado!\nNome do Evento: "+this.nomeEvento+ "\nData do Evento: "+this.dataEvento);
 			
