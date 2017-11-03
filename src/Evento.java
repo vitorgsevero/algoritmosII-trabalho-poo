@@ -11,13 +11,13 @@ public class Evento {
 		
 		System.out.println("Informe o nome do Evento:");
 		this.nomeEvento = ler.next();
-		this.setNomeEvento(nomeEvento);
-		System.out.println("Informe a data em que " +this.nomeEvento+ " irá acontecer:");
+		setNomeEvento(nomeEvento);
+		System.out.println("Informe a data em que " +this.getNomeEvento()+ " irá acontecer:");
 		this.dataEvento = ler.next();
-		this.setDataEvento(dataEvento);
+		setDataEvento(dataEvento);
 	}
 	
-	public void infoEvento(){
+/*	public void infoEvento(){
 		
 		System.out.println("Informe o nome do seu Evento:");
 		this.pesquisaEvento = ler.next();
@@ -32,12 +32,12 @@ public class Evento {
 		}
 		
 		
-	}
+	}*/
 	
 	
 
 	public String getDataEvento() {
-		return dataEvento;
+		return this.dataEvento;
 	}
 
 	public void setDataEvento(String dataEvento) {

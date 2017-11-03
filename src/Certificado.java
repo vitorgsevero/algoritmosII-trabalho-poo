@@ -16,16 +16,17 @@ public class Certificado extends Participantes {
 				System.out.println("Informe seu nome:");
 				this.nomeParticipante = ler.next();
 				this.setNomeParticipante(nomeParticipante);
-				
-				System.out.println("Certifico que " +this.nomeParticipante+ "participou do " +this.nomeEvento);
+				this.getNomeEvento();
+				System.out.println("Certifico que " +this.getNomeParticipante()+ " participou do " +this.getNomeEvento());
+			 
 			}
 			
 			if(this.posicao==2){
 				
 				System.out.println("Informe seu nome:");
-			
 				
-				System.out.println("Certifico que " +this.nomeParticipante+ "foi organizador do " +this.nomeEvento);
+		
+				System.out.println("Certifico que " +this.nomeParticipante+ " foi organizador do " +this.nomeEvento);
 			}
 			
 			if(this.posicao==3){
@@ -34,7 +35,7 @@ public class Certificado extends Participantes {
 				this.nomePalestrante = ler.next();
 				this.setNomePalestrante(nomePalestrante);
 
-				System.out.println("Certifico que " +this.nomePalestrante+ "palestrou no " +this.nomeEvento);
+				System.out.println("Certifico que " +this.getNomePalestrante()+ " palestrou no " +this.getNomeEvento());
 			}
 
 			
