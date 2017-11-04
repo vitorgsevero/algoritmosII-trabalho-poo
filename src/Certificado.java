@@ -15,9 +15,7 @@ public class Certificado extends Participantes {
 				
 				System.out.println("Informe seu nome:");
 				this.nomeParticipante = ler.next();
-				this.setNomeParticipante(nomeParticipante);
-				this.getNomeEvento();
-				System.out.println("Certifico que " +this.getNomeParticipante()+ " participou do " +this.getNomeEvento());
+				System.out.println("Certifico que " +this.nomeParticipante + " participou do " +this.nomeEvento);
 			 
 			}
 			
@@ -26,7 +24,7 @@ public class Certificado extends Participantes {
 				System.out.println("Informe seu nome:");
 				
 		
-				System.out.println("Certifico que " +this.nomeParticipante+ " foi organizador do " +this.nomeEvento);
+				System.out.println("Certifico que " + this.getnome+ " foi organizador do " +this.nomeEvento);
 			}
 			
 			if(this.posicao==3){
@@ -45,12 +43,6 @@ public class Certificado extends Participantes {
 			System.out.println("Não foi possível emitir o seu certificado.");
 			
 		}
-		
-
-		
-		
-	
-		
 	}
 
 }

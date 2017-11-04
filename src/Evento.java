@@ -17,7 +17,7 @@ public class Evento {
 		setDataEvento(dataEvento);
 	}
 	
-/*	public void infoEvento(){
+		public void infoEvento(){
 		
 		System.out.println("Informe o nome do seu Evento:");
 		this.pesquisaEvento = ler.next();
@@ -32,7 +32,7 @@ public class Evento {
 		}
 		
 		
-	}*/
+	}
 	
 	
 
