@@ -10,11 +10,7 @@ public class Executa {
 		Palestras palestras = new Palestras();
 		Evento evento = new Evento();
 
-		
-		
-		//palestras.criaPalestra();
-		
-		certificado.emitirCertificado();
+		op.menu();
 		
 	}
 
