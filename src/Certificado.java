@@ -24,7 +24,7 @@ public class Certificado extends Participantes {
 				System.out.println("Informe seu nome:");
 				
 		
-				System.out.println("Certifico que " + this.getnome+ " foi organizador do " +this.nomeEvento);
+				System.out.println("Certifico que " + this.getnomeor+ " foi organizador do " +this.nomeEvento);
 			}
 			
 			if(this.posicao==3){
