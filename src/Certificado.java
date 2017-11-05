@@ -13,25 +13,27 @@ public class Certificado extends Participantes {
 			
 			if(this.posicao==1){
 				
-				System.out.println("Informe seu nome:");
+				System.out.println("\nInforme seu nome:");
 				this.nomeParticipante = ler.next();
-				System.out.println("Certifico que " +this.nomeParticipante + " participou do " +this.nomeEvento);
+				super.setNomeParticipante(nomeParticipante);
+				System.out.println("Certifico que " +this.getNomeParticipante() + " participou do " +this.getNomeEvento());
 			 
 			}
 			
 			if(this.posicao==2){
 				
-				System.out.println("Informe seu nome:");
-				
+				System.out.println("\nInforme seu nome:");
+				this.nomeOrganizador = ler.next();
+				super.setNomeOrganizador(nomeOrganizador);
 		
-				System.out.println("Certifico que " +this.nomeOrganizador+ " foi organizador do " +this.nomeEvento);
+				System.out.println("Certifico que " +this.getNomeOrganizador()+ " foi organizador do " +this.getNomeEvento());
 			}
 			
 			if(this.posicao==3){
 				
-				System.out.println("Informe seu nome:");
+				System.out.println("\nInforme seu nome:");
 				this.nomePalestrante = ler.next();
-				this.setNomePalestrante(nomePalestrante);
+				super.setNomePalestrante(nomePalestrante);
 
 				System.out.println("Certifico que " +this.getNomePalestrante()+ " palestrou no " +this.getNomeEvento());
 			}
@@ -40,7 +42,7 @@ public class Certificado extends Participantes {
 			
 		}catch(Exception erro){
 			
-			System.out.println("Não foi possível emitir o seu certificado.");
+			System.out.println("\nNão foi possível emitir o seu certificado.");
 			
 		}
 	}

@@ -9,26 +9,26 @@ public class Evento {
 	
 	public void criaEvento(){
 		
-		System.out.println("Informe o nome do Evento:");
+		System.out.println("\nInforme o nome do Evento:");
 		this.nomeEvento = ler.next();
 		setNomeEvento(nomeEvento);
-		System.out.println("Informe a data em que " +this.getNomeEvento()+ " irá acontecer:");
+		System.out.println("\nInforme a data em que " +this.getNomeEvento()+ " irá acontecer:");
 		this.dataEvento = ler.next();
 		setDataEvento(dataEvento);
 	}
 	
 		public void infoEvento(){
 		
-		System.out.println("Informe o nome do seu Evento:");
+		System.out.println("\nInforme o nome do seu Evento:");
 		this.pesquisaEvento = ler.next();
 		
-		if (this.pesquisaEvento.equals(this.nomeEvento)){
+		if (this.pesquisaEvento.equalsIgnoreCase(this.nomeEvento)){
 			
-			System.out.println("Evento encontrado!\nNome do Evento: "+this.nomeEvento+ "\nData do Evento: "+this.dataEvento);
+			System.out.println("\nEvento encontrado!\nNome do Evento: "+this.nomeEvento+ "\nData do Evento: "+this.dataEvento);
 			
 		}else{
 			
-			System.out.println("Evento não encontrado...");
+			System.out.println("\nEvento não encontrado...");
 		}
 		
 		

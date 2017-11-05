@@ -9,32 +9,31 @@ public class Palestras extends Evento {
 	
 	public void criaPalestra(){
 		
-		System.out.println("Informe o evento para vincular a nova palestra:");
+		System.out.println("\nInforme o evento para vincular a nova palestra:");
 		this.pesquisa = ler.next();
 	
 		try{
 		
 			if (pesquisa.equalsIgnoreCase(nomeEvento)){
 			
-				System.out.println("Informe o nome da nova palestra:");
+				System.out.println("\nInforme o nome da nova palestra:");
 				this.tituloPalestra = ler.next();
 				this.setTituloPalestra(tituloPalestra);
 				
-				System.out.println("Informe o horário da Palestra:");
+				System.out.println("\nInforme o horário da Palestra:");
 				this.horarioPalestra = ler.next();
 				this.setHorarioPalestra(horarioPalestra);
 				
 				this.setSalaPalestra(100);
 				
-				System.out.println("Informe um breve resumo sobre a palestra:");
+				System.out.println("\nInforme um breve resumo sobre a palestra:");
 				this.resumoPalestra = ler.next();
 				this.setResumoPalestra(resumoPalestra);
 			
 			}
 		
-		
 		}catch(Exception erro){
-			System.out.println("Palestra não encontrada...");
+			System.out.println("\nPalestra não encontrada...");
 		}
 		
 	}
@@ -43,12 +42,13 @@ public class Palestras extends Evento {
 		
 		try{
 			
-			System.out.println("Informe o título da palestra para ver o resumo:");
+			System.out.println("\nInforme o título da palestra para ver o resumo:");
 			this.pesquisa = ler.next();
 			
 			if(this.pesquisa.equalsIgnoreCase(this.tituloPalestra)){
 				
-				System.out.println("RESUMO DA PALESTRA:\n Título da Palestra: " +this.tituloPalestra+ "\nHorário da Palestra: " +this.horarioPalestra+ "\nResumo: " +this.resumoPalestra);
+				System.out.println("\nINFORMAÇÕES DA PALESTRA:\nTítulo da Palestra: " + this.getTituloPalestra() + "\nHorário da Palestra: "
+				+ this.getHorarioPalestra() + "\nResumo: " + this.getResumoPalestra() + "\nSala da Palestra:" + this.getSalaPalestra());
 			}
 			
 		}catch(Exception erro){

@@ -1,5 +1,5 @@
 
-public class Participantes extends Palestrantes {
+public class Participantes extends Organizador {
 	
 	protected String nomeParticipante;
 	protected String emailParticipante;

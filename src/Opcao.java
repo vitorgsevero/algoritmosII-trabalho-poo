@@ -5,7 +5,7 @@ public class Opcao extends Encerra {
 	
 	public void menu(){
 		
-		while(this.opcao!=1 ||this.opcao!=2 || this.opcao!=3 ||this.opcao!=4){
+		while(this.opcao!=1 ||this.opcao!=2 || this.opcao!=3 ||this.opcao!=4 || this.opcao!=5 || this.opcao!=6){
 			
 			System.out.println("Bem-vindo ao Sistema de Eventos!\nInforme a opção desejada:\n1)Criar Evento \n2)Ver Eventos\n3)Criar Palestras \n4)Ver Resumo das Palestras \n5)Emitir certificado \n6)Sair");
 			this.opcao = ler.nextInt();
