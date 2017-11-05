@@ -30,6 +30,8 @@ public class Palestras extends Evento {
 				this.resumoPalestra = ler.next();
 				this.setResumoPalestra(resumoPalestra);
 			
+			}else{
+				System.out.println("\nEvento não encontrado.");
 			}
 		
 		}catch(Exception erro){

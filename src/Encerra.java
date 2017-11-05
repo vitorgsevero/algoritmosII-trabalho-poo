@@ -1,19 +1,20 @@
 
 public class Encerra extends Certificado{
 
-	protected String encerraPrograma;
+	protected String encerraPrograma="Fechando o sistema...";
 	
-	public String finaliza(){
-		this.setFinaliza("Encerrando o Programa...");
-		return encerraPrograma;
+	public void finaliza(){
+
+		System.out.println(this.encerraPrograma);
+		
+		try {
+			this.finalize();
+		} catch (Throwable e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
-	public String getFinaliza() {
-		return encerraPrograma;
-	}
-
-	public void setFinaliza(String encerraPrograma) {
-		this.encerraPrograma = encerraPrograma;
-	}
 
 }
